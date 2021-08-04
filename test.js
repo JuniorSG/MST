@@ -24,8 +24,8 @@ function handleOrientation(event) {
     var beta     = event.beta;
     var gamma    = event.gamma;
     
-    Absolute.innerHTML=absolute + ' Absolute';
-    Alpha.innerHTML=alpha + ' Alpha';
-    Beta.innerHTML=beta + ' Beta';
-    Gamma.innerHTML=gamma + ' Gamma';
+    Absolute.innerHTML=absolute;
+    Alpha.innerHTML=alpha;
+    Beta.innerHTML=beta;
+    Gamma.innerHTML=gamma;
   }

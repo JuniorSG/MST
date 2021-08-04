@@ -108,7 +108,7 @@ function handleOrientation(event) {
     Alpha.innerHTML=alpha;
     var lookY =beta;
     var lookX =gamma;
-    object.lookAt(lookX,lookY,30);
+    object.lookAt(lookX,-1*lookY,30);
     // Beta = Y, Gamma = X
   }
 }

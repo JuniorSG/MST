@@ -4,21 +4,7 @@ var Acel_z = document.getElementById("A_z");
 var Absolute = document.getElementById("Absolute");
 var Alpha = document.getElementById("Alpha");
 var Beta = document.getElementById("Beta");
-var Gamma = document.getElementById("Gamma");
-
-
-
-
-
-window.addEventListener('devicemotion', function(event) {
-    Acel_x.innerHTML=event.x + ' m/s2';
-    Acel_y.innerHTML=event.y + ' m/s2';
-    Acel_z.innerHTML=event.z + ' m/s2';
-  });
-
-
-
-  
+var Gamma = document.getElementById("Gamma"); 
 
 
 //   THREE JS
@@ -106,9 +92,7 @@ function handleOrientation(event) {
     
     Absolute.innerHTML=absolute;
     Alpha.innerHTML=alpha;
-    var lookY =beta;
-    var lookX =gamma;
-    object.lookAt(lookX,-1*lookY,30);
+    object.lookAt(gamma,beta,30);
     // Beta = Y, Gamma = X
   }
 }

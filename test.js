@@ -7,6 +7,9 @@ var Beta = document.getElementById("Beta");
 var Gamma = document.getElementById("Gamma");
 
 
+
+
+
 window.addEventListener('devicemotion', function(event) {
     Acel_x.innerHTML=event.x + ' m/s2';
     Acel_y.innerHTML=event.y + ' m/s2';
